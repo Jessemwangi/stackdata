@@ -11,3 +11,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+main{
+  background-color: aliceblue;
+  width: 40%;
+  border: 3px green solid;
+  padding: 2rem;
+  margin: 0 auto;
+}
+input{
+  width: 250px;
+  height: 25px;
+}
+p{
+  border-top: black 3px green;
+  border-bottom: solid 3px green;
+  padding: 0.8rem;
+  margin-top: 1rem;
+}
+button{
+  margin-top: 2rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
