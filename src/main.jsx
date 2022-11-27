@@ -12,6 +12,9 @@ class main extends Component {
     getstring = (e) => {
         this.setState({
             [e.target.name]: e.target.value,
+            pushing:'Waiting for input',
+            reverseStr:'',
+            poping:''
 
         });
     }
@@ -27,11 +30,12 @@ class main extends Component {
             if (this.state.string) {
 
                 newArray = this.state.string.split('');
-                unshiftstr = newArray.shift();
+                unshiftstr = newArray.pop();
 
                 this.setState({
                     string: (newArray.join('')),
-                    poping: this.state.poping + unshiftstr
+                    poping: this.state.poping + unshiftstr, 
+                    pushing:'stack size, ' + newArray.length,
                 })
             }
             else {
@@ -43,6 +47,7 @@ class main extends Component {
         }
         return (
             <main>
+                <h1>Stack</h1>
                 <form action="" onChange={this.getstring} onSubmit={this.captureinput}>
 
                     <input type="text" name='string' onChange={this.getstring} />
