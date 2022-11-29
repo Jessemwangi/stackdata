@@ -53,8 +53,8 @@ class main extends Component {
                     <input type="text" name='string' onChange={this.getstring} />
                 </form>
                 <button onClick={reverse}>click to unstack</button>
-                <p>stack content : : {this.state.string}</p>
-                <p>{this.state.reverseStr}{this.state.poping}  {this.state.pushing}</p>
+                <p>stack content : : <b>{this.state.string}</b></p>
+                <p><b>{this.state.reverseStr}{this.state.poping}</b>  {this.state.pushing}</p>
 
             </main>
         );
